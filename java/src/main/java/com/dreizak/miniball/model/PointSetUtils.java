@@ -14,7 +14,7 @@ public class PointSetUtils
   /**
    * A random number generator for use in {@link PointSetUtils#randomPointSet(int, int, Random)}.
    */
-  public static interface Random
+  public interface Random
   {
     double nextDouble();
   }
@@ -63,7 +63,7 @@ public class PointSetUtils
    *          the input stream to read from
    * @return
    */
-  public static final ArrayPointSet pointsFromStream(InputStream s)
+  public static ArrayPointSet pointsFromStream(InputStream s)
   {
     try
     {
